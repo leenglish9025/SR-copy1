@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성적표</title>
+    <link rel="stylesheet" href="restyles.css">
+</head>
+<body>
+    <header>
+        <h1>최종 성적표</h1>
+    </header>
+
+    <main>
+        <!-- 레벨 및 프로그레스 바 -->
+        <div id="progress-container">
+            <div id="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+            <p style="text-align: center; font-size: 16px;">총 14레벨 중 당신의 레벨: <span id="final-level">0</span></p>
+        </div>
+
+        <!-- 영역별 성적 테이블 -->
+        <h2>영역별 성취도</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>영역</th>
+                    <th>맞은 개수</th>
+                    <th>점수</th>
+                    <th>성취도</th>
+                </tr>
+            </thead>
+            <tbody id="score-table"></tbody>
+        </table>
+
+        <!-- 레이더 차트 -->
+        <canvas id="radar-chart" class="chart"></canvas>
+
+        <!-- 피드백 -->
+        <div class="description" id="feedback"></div>
+
+        <!-- PDF 다운로드 버튼 -->
+        <div id="download-button">
+            <a id="pdf-download" href="#">PDF로 다운로드</a>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
