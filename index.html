@@ -120,6 +120,11 @@
         let problems = [];
         let timerInterval;
 
+
+        const levels = data.levels;
+        const levelQuestions = levels["0"]; // level "0" 데이터 읽기
+
+
         // JSON 파일 로드
         async function loadProblems() {
             try {
