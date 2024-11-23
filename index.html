@@ -25,16 +25,18 @@
             z-index: 1000;
         }
 
-        #progress {
-            position: absolute;
-            top: 10px;
-            left: 15px;
-            font-size: 16px;
-            color: white;
-        }
+        progress {
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           font-size: 16px;
+           color: white;
+           text-align: center; /* 텍스트 정렬 */
+         }
 
         main {
-            margin-top: 500px; /* 헤더 높이만큼 여백 추가 */
+            margin-top: 300px; /* 헤더 높이만큼 여백 추가 */
             padding: 20px;
             max-width: 600px;
             margin-left: auto;
